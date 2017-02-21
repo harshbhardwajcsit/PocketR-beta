@@ -1,20 +1,48 @@
 {
-  "name": "fitness",
+  "name": "express.js",
   "version": "1.0.0",
-  "description": "",
+  "description": "this is npm express installation on 2/4/2016 at 4:47",
   "main": "index.js",
-  "dependencies": {
-    "chokidar": "^1.6.0",
-    "body-parser": "^1.15.1",
-    "connect-timeout": "^1.7.0",
-    "cookie-parser": "^1.4.3",
-    "express": "^4.13.4"
-  },
-  "devDependencies": {},
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/username/repository.git"
+  },
+  "bugs": {
+    "url": "https://github.com/username/repository/issues"
+  },
+  "homepage": "https://github.com/username/repository#readme",
+  "_id": "express.js@1.0.0",
+  "_shasum": "e35b9e5eb04d12c446a7efde09baa785c2952424",
+  "_from": "express.js@latest",
+  "_npmVersion": "3.3.12",
+  "_nodeVersion": "5.5.0",
+  "_npmUser": {
+    "name": "punit",
+    "email": "punitgrovers12@gmail.com"
+  },
+  "dist": {
+    "shasum": "e35b9e5eb04d12c446a7efde09baa785c2952424",
+    "tarball": "https://registry.npmjs.org/express.js/-/express.js-1.0.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "punit",
+      "email": "punitgrovers12@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-6-west.internal.npmjs.com",
+    "tmp": "tmp/express.js-1.0.0.tgz_1454587008032_0.6111525930464268"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/express.js/-/express.js-1.0.0.tgz"
 }
