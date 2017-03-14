@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<h1> Feel free to gupshup here!!</h1>
+<head>
+
+    <meta charset="UTF-8">
+    <title>Desi whatsapp</title>
+
+
+</head>
+
+<body>
+
+
+
+Type your msg:<input id="msg" type="text" >
+<button onclick="sendMsg()">send</button>
+<div id="messages">
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+
+var server=window.location.host;
+    var socket = io.connect('http://'+window.location.host+'/');
+
+//sending msg to server
+        var sendMsg=function(){
+        var chat=document.getElementById('msg').value;
+
+        console.log("sending..." +chat);
+        socket.emit('chat',chat);
+        document.getElementById('msg').value="";
+
+
+///listening by server and resppnse  by server
+
+       var messages=document.getElementById('messages');
+
+       socket.on('sendChat',function(data){
+
+
+
+      messages.innerHTML= messages.innerHTML +"<p>" +data+ "</p>"
+      console.log("server:"+data);
+
+
+
+       })
+     }
+
+
+    socket.on('data', function (data) {
+        console.log(data);
+        // socket.emit('my other event', { my: 'data' });
+        socket.emit('news',{"tile":"this is latest headlines"})
+    });
+
+
+</script>
+
+
+</body>
+</html>
